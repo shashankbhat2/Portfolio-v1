@@ -1,11 +1,13 @@
 import React from 'react'
 import {LocationHeart32, Education32} from '@carbon/icons-react';
 import styles from './index.module.css'
+import CustomHead from '../components/head';
 const about = () => {
     return (
         <>
-       <div className="animate__animated animate__fadeIn columns">
-      <div className={`container ${styles.content}`}>
+        <CustomHead title="About"></CustomHead>
+       <div className="animate__animated animate__fadeIn">
+       <div className={`container ${styles.content}`}>
         <p className={styles.welcome}>About</p>
         <p className={styles.info}>
         I am a <strong>Web Developer</strong> currently working as a Front-End Development Intern at <strong>Preplaced</strong>, an Ed-Tech startup.         

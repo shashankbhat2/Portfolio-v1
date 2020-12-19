@@ -1,7 +1,4 @@
 
-.light{
-    background: #fff8f0;
-}
 .content{
     margin-top: 30%;
     width: auto;
@@ -182,16 +179,19 @@
 }
 @media (max-width: 767px) {
     .content{
+        overflow: hidden;
         margin-top: 10px;
         text-align: center;
         font-family: IBM Plex Mono, 'Courier New', monospace;
     }
     .welcome{
+        overflow: hidden;
         color: #406e8e;
         font-size: 30px;
         font-weight: 550;
     }
     .info{
+        overflow: hidden;
         margin-top: 20px;
         margin-bottom: 20px;
         font-weight: 400;
@@ -206,7 +206,7 @@
     .close{
         z-index: 5;
         position: absolute;
-        margin-left: 330px;
+        margin-left: 280px;
     }
     
 }

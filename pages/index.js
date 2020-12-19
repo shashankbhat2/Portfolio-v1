@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import CustomHead from '../components/head';
 import { loadDB } from "../util/firebase";
 import styles from './index.module.css'
 
@@ -66,6 +67,7 @@ export default function Home() {
   
   return (
     <>
+      <CustomHead></CustomHead>
       <div className={styles.index}>
       <div className="animate__animated animate__fadeIn columns">
       <div className={`container ${styles.content}`}>
