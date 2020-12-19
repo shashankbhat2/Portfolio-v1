@@ -1,2 +1,7 @@
 # Portfolio-v1
-Portfolio Version - 1.0 
+Built with 
+
+- Bulma 
+- Next
+- Firebase
+- Email-automation : Zapier
