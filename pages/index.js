@@ -67,13 +67,12 @@ export default function Home() {
   return (
     <>
       <div className={styles.index}>
-      <div className="animate__animated animate__fadeIn column">
-      <div className="column">
+      <div className="animate__animated animate__fadeIn columns">
       <div className={`container ${styles.content}`}>
         <p className={styles.welcome}>Hey!</p>
         <p className={styles.info}>
-        I am <strong>Shashank Bhat</strong>, a <strong>Web Developer</strong> who loves Javascript, <br></br>its libraries and frameworks. 
-        Learning and working on Reactjs, <br></br>Nextjs and Nodejs based projects.
+        I am <strong>Shashank Bhat</strong>, a <strong>Web Developer</strong> who loves Javascript, its libraries and frameworks. 
+        Learning and working on Reactjs, Nextjs and Nodejs based projects.
         </p>
         <p className={styles.contact}>
         You find my work cool? 
@@ -86,9 +85,11 @@ export default function Home() {
         }
         {
           form &&
-          <form className="animate__animated animate__fadeIn container mt-5" id="contactForm" onSubmit={handleSubmit}>
+          <div className="container">
+          <form className="animate__animated animate__fadeIn container mt-6" id="contactForm" onSubmit={handleSubmit}>
             <div className="field">
             <div className="control">
+            <button className={`button ${styles.close}`} onClick={handleClose}>X</button>
               <input className={`input ${styles.w_25} ${styles.input} `} value={name} type="text" placeholder="Name" required onChange={(e) => setName(e.target.value)}/>
             </div>
             </div>
@@ -106,14 +107,13 @@ export default function Home() {
               </select>
             </div>
             <br></br>
-        {loader ? <button className={`button ${styles.submit}`} type="submit">Submitting...</button> : <button className={`button ${styles.submit}`} type="submit" value="Submit">Submit</button> }
-        <button className={`button ${styles.close}`} onClick={handleClose}>X</button>
-          {success && <p className={styles.succ}>Submitted! lets catch up Soon!</p>}
-          {error && <p className={styles.err}>Oh Sorry, It failed. Please try again!</p>}
+          {loader ? <button className={`button animate__delay-4s	 ${styles.submit}`} type="submit">Submitting...</button> : <button className={`button ${styles.submit}`} type="submit" value="Submit">Submit</button> }
+          {success && <p className={`animate__animated animate__delay-4s animate__fadeOut ${styles.succ}`}>Submitted! lets catch up Soon!</p>}
+          {error && <p className={`animate__animated animate__delay-4s animate__fadeOut ${styles.err}`}>Oh Sorry, It failed. Please try again!</p>}
           </form>
+          </div>
         }
         </p>
-      </div>
       </div>
       </div>
       </div>

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/footer";
 import SideBar from "../components/sidebar";
 import '../styles/styles.css'
 function MyApp({ Component, pageProps }) {
@@ -14,14 +15,17 @@ function MyApp({ Component, pageProps }) {
       />
       </Head>
       <div className="columns">
-      <div className="column is-one-third"> 
+      <div className="column"> 
         <SideBar></SideBar>
       </div>  
-      <div className="column">
+      <div className="column is-half">
       <Component {...pageProps}/>
       </div>
-      <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+      <div className="column">
+      <Footer></Footer>
       </div>
+      </div>
+      <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
     </>
   )
 }

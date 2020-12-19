@@ -1,0 +1,19 @@
+.title{
+    font-weight: 600;
+    color: navy;
+    font-size: 18px;
+}
+
+.link{
+    color: royalblue;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.tech{
+    font-size: 15px;
+    margin-top: 10px;
+    color: darkslateblue;
+    font-weight: 550;
+    margin-bottom: 5px;
+}

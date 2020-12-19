@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "img": "static/Gen.svg",
+        "name": "Generator House",
+        "tech": "Next.js, Bootstrap",
+        "link": "https://generatorhouse.co.in"
+    },
+    {
+        "id": 2,
+        "img": "static/Flip.svg",
+        "name": "Flipbooks",
+        "tech": "Next.js, Bootstrap, Google Analytics",
+        "link": "https://flipbooks.co.in"
+    }
+]
