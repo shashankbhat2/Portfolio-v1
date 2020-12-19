@@ -1,0 +1,27 @@
+:root{
+    --dark: #111d4a;
+    --light: #fff8f0;
+    --content: #406e8e;
+    --highlight-l: #23395B;
+    --red: #FF0000;
+    --highlight-d: #fbdec7;
+    --shadow-l: rgba(35, 57, 91, 0.4);
+    --shadow-d: rgba(255, 248, 240, 0.4);
+    --font: IBM Plex Mono, 'Courier New', Courier, monospace;
+}
+
+html{
+    background-color: var(--light);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background: #fff8f0;
+}
+
+a{
+    text-decoration: none;
+}
