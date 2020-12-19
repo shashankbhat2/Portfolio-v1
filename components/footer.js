@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import styles from './sidebar.module.css'
 
 const Footer = () => {
@@ -5,7 +6,10 @@ const Footer = () => {
     const year = date.getFullYear();
 
     return(
-        <>
+        <>  
+            <Head>
+                <title>Shashank Bhat - Web Developer</title>
+            </Head>
             <div className={`container ${styles.footer}`}>
             <ul className={`${styles.icons}`}>
                         <li><a href="https://github.com/shashankbhat2" target="_blank"><box-icon name='github' type='logo' color='#23395b' ></box-icon></a></li>
