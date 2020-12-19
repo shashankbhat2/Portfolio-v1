@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { loadDB } from "./firebase";
+import { loadDB } from "../util/firebase";
 import styles from './index.module.css'
 
 export default function Home() {
@@ -54,8 +54,16 @@ export default function Home() {
 
   function handleClose(){
     setForm(false)
+    if(success === true){
+      setSuccess(false);
+    }
+    if(error === true){
+      setError(false);
+    }
     setButton(true)
   }
+
+  
   return (
     <>
       <div className={styles.index}>
@@ -98,7 +106,7 @@ export default function Home() {
               </select>
             </div>
             <br></br>
-        {loader ? <button className={`button ${styles.submit}`} type="submit" value="Loading..."></button> : <button className={`button ${styles.submit}`} type="submit" value="Submit">Submit</button> }
+        {loader ? <button className={`button ${styles.submit}`} type="submit">Submitting...</button> : <button className={`button ${styles.submit}`} type="submit" value="Submit">Submit</button> }
         <button className={`button ${styles.close}`} onClick={handleClose}>X</button>
           {success && <p className={styles.succ}>Submitted! lets catch up Soon!</p>}
           {error && <p className={styles.err}>Oh Sorry, It failed. Please try again!</p>}
